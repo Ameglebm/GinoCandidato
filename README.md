@@ -1,0 +1,2 @@
+# GinoCandidato
+Contador de votos
