@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votos por Bairro - Candidato Gino</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #chartContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 60%; 
+            margin: 20px auto; 
+        }
+
+        canvas {
+            max-width: 100%; 
+            height: auto; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,6 +34,9 @@
         <h1>Contagem de Votos por Bairro</h1>
         <div id="neighborhoodVoteCounts">
             <ul id="neighborhoodVotesList">Carregando contagem de votos por bairro...</ul>
+        </div>
+        <div id="chartContainer">
+            <canvas id="voteChart"></canvas>
         </div>
     </div>
 
